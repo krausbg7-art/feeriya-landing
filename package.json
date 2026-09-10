@@ -1,0 +1,11 @@
+{
+  "name": "feeriya-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Посадочная страница «Фейерверки по поводу» для feeriya.ru",
+  "type": "module",
+  "scripts": {
+    "start": "npx --yes serve . -l 5173",
+    "build:catalog": "node scripts/build-catalog.mjs"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "site": "https://www.feeriya.ru",
+    "note": "Категории и счётчики взяты с сайта feeriya.ru. Товары в products.json генерируются из YML-фида скриптом scripts/build-catalog.mjs.",
+    "deliveryDeadlines": {
+      "msk": "2026-12-30T14:00:00+03:00",
+      "regions": "2026-12-24T14:00:00+03:00"
+    }
+  },
+  "occasions": [
+    {
+      "id": "new-year",
+      "name": "Новый год",
+      "lead": "Главный запуск года. Берут заранее — к 20 декабря лучшие позиции разбирают.",
+      "advice": "Считайте по времени: на двор хватает 2–3 минут работы. Это одна крупная батарея или три средние подряд.",
+      "categories": [
+        { "title": "Крупные фейерверки", "count": 47, "path": "/batarei_saljutov_krupnye" },
+        { "title": "Супер-салюты", "count": 36, "path": "/batarei_super_saljutov" },
+        { "title": "Средние фейерверки", "count": 78, "path": "/batarei_saljutov_srednie" },
+        { "title": "Римские свечи", "count": 29, "path": "/rimskie_svechi" },
+        { "title": "Бенгальские огни", "count": 15, "path": "/letajuschie_fejerverki/bengalskie_ogni" },
+        { "title": "Хлопушки", "count": 8, "path": "/letajuschie_fejerverki/hlopushki" }
+      ]
+    },
+    {
+      "id": "wedding",
+      "name": "Свадьба",
+      "lead": "Финал вечера. Важнее не мощность, а то, чтобы гости стояли рядом и им было безопасно.",
+      "advice": "Холодные фонтаны работают в помещении и в кадре. Салют — на улице, отдельным финалом на 1–2 минуты.",
+      "categories": [
+        { "title": "Фонтаны", "count": 38, "path": "/fontany" },
+        { "title": "Пневмохлопушки", "count": 17, "path": "/soputstvujushhie/pnevmohlopushki" },
+        { "title": "Римские свечи", "count": 29, "path": "/rimskie_svechi" },
+        { "title": "Средние фейерверки", "count": 78, "path": "/batarei_saljutov_srednie" },
+        { "title": "Крупные фейерверки", "count": 47, "path": "/batarei_saljutov_krupnye" }
+      ]
+    },
+    {
+      "id": "birthday",
+      "name": "День рождения",
+      "lead": "Домашний масштаб. Чаще во дворе или на даче, часто с детьми рядом.",
+      "advice": "Начните с фонтанов и пневмохлопушек — они работают вблизи. Батарею на 19–25 залпов ставьте отдельно, метрах в тридцати.",
+      "categories": [
+        { "title": "Малые фейерверки", "count": 53, "path": "/batarei_saljutov_malye" },
+        { "title": "Фонтаны", "count": 38, "path": "/fontany" },
+        { "title": "Пневмохлопушки", "count": 17, "path": "/soputstvujushhie/pnevmohlopushki" },
+        { "title": "До 19 залпов", "count": 30, "path": "/batarei-saljutov/do-19-zalpov" },
+        { "title": "25 залпов", "count": 36, "path": "/batarei-saljutov/25-zalpov" },
+        { "title": "Бенгальские огни", "count": 15, "path": "/letajuschie_fejerverki/bengalskie_ogni" }
+      ]
+    },
+    {
+      "id": "anniversary",
+      "name": "Юбилей",
+      "lead": "Круглая дата — повод для одного большого залпа, а не для россыпи мелочей.",
+      "advice": "Смотрите на калибр и высоту: от 1 дюйма и 30 метров салют видно всей улице. Одна крупная батарея на 100+ залпов закрывает вечер.",
+      "categories": [
+        { "title": "Крупные фейерверки", "count": 47, "path": "/batarei_saljutov_krupnye" },
+        { "title": "Супер-салюты", "count": 36, "path": "/batarei_super_saljutov" },
+        { "title": "100 залпов", "count": 25, "path": "/batarei-saljutov/100-zalpov" },
+        { "title": "Римские свечи", "count": 29, "path": "/rimskie_svechi" },
+        { "title": "Фонтаны", "count": 38, "path": "/fontany" }
+      ]
+    }
+  ],
+  "budgets": [
+    { "id": "low", "label": "До 10 000 ₽", "min": 0, "max": 10000, "path": "/batarei-saljutov/populjarnoe-do-10000" },
+    { "id": "mid", "label": "От 10 000 ₽", "min": 10000, "max": 30000, "path": "/batarei-saljutov/populjarnoe-ot-10000" },
+    { "id": "high", "label": "Супер-салюты", "min": 30000, "max": 999999, "path": "/batarei_super_saljutov" }
+  ],
+  "links": {
+    "bot": "/bot",
+    "delivery": "/delivery",
+    "returns": "/vozvrat",
+    "reviews": "/obratnaya_svyaz",
+    "corporate": "/korporativnym-klientam",
+    "phone": "+74959263113",
+    "phoneLabel": "+7 495 926-31-13",
+    "hours": "10:00–19:00, без выходных"
+  },
+  "trust": [
+    { "value": "42 279", "label": "отзывов о товарах" },
+    { "value": "4,95", "label": "рейтинг магазина" },
+    { "value": "с 1997", "label": "года на рынке" },
+    { "value": "от 3 000 ₽", "label": "бесплатная доставка" }
+  ]
+}

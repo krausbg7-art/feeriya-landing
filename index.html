@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Фейерверки по поводу — Новый год, свадьба, день рождения, юбилей | Феерия.ру</title>
+<meta name="description" content="Подборка фейерверков под ваш повод: Новый год, свадьба, день рождения, юбилей. Смотрите залпы, калибр, высоту и время работы до покупки.">
+<meta name="theme-color" content="#80166e">
+<link rel="canonical" href="https://www.feeriya.ru/">
+<meta property="og:title" content="Фейерверки по поводу — Феерия.ру">
+<meta property="og:description" content="Подборка под Новый год, свадьбу, день рождения и юбилей. Залпы, калибр, высота и время работы — до покупки.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="demo-flag" id="demoFlag" hidden>
+  Демо-данные. Часть карточек — заглушки. Соберите <code>data/products.json</code> из YML-фида: <code>npm run build:catalog</code>
+</div>
+
+<header class="top">
+  <a class="top__brand" href="https://www.feeriya.ru/" data-track="header-logo">Феерия<span>.ру</span></a>
+  <div class="top__side">
+    <button class="city" id="cityBtn" type="button">
+      Город: <span id="cityName">Москва</span>
+    </button>
+    <a class="top__tel" id="phoneLink" href="tel:+74959263113" data-track="header-phone">
+      +7 495 926-31-13
+      <em id="phoneHours">10:00–19:00, без выходных</em>
+    </a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero__inner">
+    <p class="hero__kicker">Онлайн-гипермаркет пиротехники, с 1997 года</p>
+    <h1 class="hero__title">Что за&nbsp;повод?</h1>
+    <p class="hero__lead">
+      Выберите событие — покажем, что для него берут, и объясним почему.
+      У каждого фейерверка видно залпы, калибр, высоту и время работы, так что
+      вы понимаете, что получите, ещё до заказа.
+    </p>
+
+    <nav class="picker" id="picker" aria-label="Выбор повода"></nav>
+  </div>
+
+  <div class="sky" aria-hidden="true">
+    <span class="burst burst--1"></span>
+    <span class="burst burst--2"></span>
+    <span class="burst burst--3"></span>
+  </div>
+</section>
+
+<section class="deadline" id="deadline" hidden>
+  <p class="deadline__text">
+    <strong id="deadlineDays"></strong>
+    <span id="deadlineNote"></span>
+  </p>
+  <a class="deadline__link" href="https://www.feeriya.ru/delivery" data-track="deadline-delivery">Условия доставки</a>
+</section>
+
+<section class="occasion" id="occasion" aria-live="polite">
+
+  <div class="occasion__head">
+    <h2 class="occasion__title" id="occTitle"></h2>
+    <p class="occasion__lead" id="occLead"></p>
+    <p class="occasion__advice" id="occAdvice"></p>
+  </div>
+
+  <div class="shortcuts">
+    <h3 class="shortcuts__title">Разделы каталога под этот повод</h3>
+    <ul class="shortcuts__list" id="shortcuts"></ul>
+  </div>
+
+  <div class="grid-head">
+    <h3 class="grid-head__title">Что берут чаще всего</h3>
+    <div class="budget" id="budget" role="group" aria-label="Бюджет"></div>
+  </div>
+
+  <ul class="cards" id="cards"></ul>
+
+  <p class="cards__empty" id="cardsEmpty" hidden>
+    В этом бюджете под повод ничего не подобралось. Снимите фильтр или загляните в разделы каталога выше.
+  </p>
+
+  <div class="more">
+    <a class="btn btn--primary" id="moreLink" href="https://www.feeriya.ru/" data-track="occasion-catalog">Смотреть весь каталог</a>
+    <a class="btn btn--ghost" href="https://www.feeriya.ru/bot" data-track="occasion-bot">Подобрать в мастере за 4 минуты</a>
+  </div>
+
+</section>
+
+<section class="trust">
+  <ul class="trust__list" id="trust"></ul>
+  <p class="trust__note">
+    Если фейерверк не отстреляет или отработает неверно — заменим изделие или вернём деньги.
+    Без чеков и коробок: достаточно фотографии того, что осталось.
+    <a href="https://www.feeriya.ru/vozvrat" data-track="trust-returns">Как это работает</a>
+  </p>
+</section>
+
+<section class="help">
+  <h2 class="help__title">Не уверены, что выбрать?</h2>
+  <div class="help__row">
+    <article class="help__card">
+      <h3>Спросить у мастера подбора</h3>
+      <p>Бот задаст несколько вопросов про повод, место и бюджет и соберёт набор.</p>
+      <a href="https://www.feeriya.ru/bot" data-track="help-bot">Открыть мастер</a>
+    </article>
+    <article class="help__card">
+      <h3>Позвонить</h3>
+      <p>Расскажем, что реально видно с вашего двора и что успеет приехать к дате.</p>
+      <a href="tel:+74959263113" data-track="help-phone">+7 495 926-31-13</a>
+    </article>
+    <article class="help__card">
+      <h3>Заказать на компанию</h3>
+      <p>Корпоративы, открытия, городские события — считаем комплект и документы.</p>
+      <a href="https://www.feeriya.ru/korporativnym-klientam" data-track="help-corporate">Корпоративным клиентам</a>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>Пиротехника продаётся лицам старше 18 лет. Вся продукция сертифицирована.</p>
+  <p><a href="https://www.feeriya.ru/" data-track="footer-home">Феерия.ру</a> · 1997–2026</p>
+</footer>
+
+<script src="assets/app.js" type="module"></script>
+</body>
+</html>
