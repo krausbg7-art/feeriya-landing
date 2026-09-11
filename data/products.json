@@ -21,7 +21,7 @@
   ],
   "new-year": [
     { "id": "46055", "name": "Архитектор", "price": 24990, "shots": 100, "caliber": "1.2\"", "height": 60, "duration": 90, "path": "/batarei_super_saljutov/arhitektor", "image": "", "video": "" },
-    { "id": "45003", "name": "Bellezza", "price": 18990, "shots": 364, "caliber": "1\"/0.8\"", "height": 25, "duration": 171, "path": "/batarei_super_saljutov/45003", "image": "https://media.feeriya.ru/photo/45003.png", "video": "https://cdn-video.feeriya.ru/video_hd/45003.mp4" },
+    { "id": "45003", "name": "Bellezza", "price": 75950, "shots": 364, "caliber": "1\"/0.8\"", "height": 25, "duration": 171, "path": "/batarei_super_saljutov/45003", "image": "https://media.feeriya.ru/photo/45003.png", "video": "https://cdn-video.feeriya.ru/video_hd/45003.mp4" },
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
