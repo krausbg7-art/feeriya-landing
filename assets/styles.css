@@ -81,7 +81,7 @@ a { color: inherit; }
   font-size: clamp(1.9rem, 4.4vw, 3.1rem); font-weight: 800; letter-spacing: -.03em;
   max-width: 26ch; margin: 0 0 1.4rem;
 }
-.hero__title span { color: var(--brand-lift); font-size: .5em; }
+.hero__title span { color: var(--brand-lift); font-size: .35em; display: block; margin-top: .3em; }
 .hero__lead { max-width: 46ch; color: #ded0e4; margin: 0 0 .9rem; font-size: var(--step-1); }
 .hero__lead:last-of-type { margin-bottom: 2.6rem; }
 
