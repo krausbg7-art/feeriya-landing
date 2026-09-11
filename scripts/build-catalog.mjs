@@ -16,12 +16,14 @@
  *      ссылкой и названием.
  *   3. Пытается достать залпы/калибр/высоту/время работы из <param>,
  *      а если их нет — угадывает по названию и описанию через regex.
- *   4. Раскладывает офферы по 4 поводам (new-year/wedding/birthday/anniversary)
- *      по правилам RULES: совпадение ключевых слов в названии + ограничение цены.
- *   5. Для каждого повода берёт до 15 товаров, равномерно распределённых по
+ *   4. Раскладывает офферы по 9 поводам (см. RULES) по правилам: совпадение
+ *      ключевых слов в названии + ограничение цены.
+ *   5. Для каждого повода берёт до 10 товаров, равномерно распределённых по
  *      цене (не просто самые дешёвые), и дозаполняет оставшиеся слоты пустыми
  *      заготовками.
- *   6. Пишет итоговый файл в data/products.json.
+ *   6. Достаёт картинку (первый <picture>) и, если указана в параметрах,
+ *      ссылку на видео.
+ *   7. Пишет итоговый файл в data/products.json.
  */
 
 import { readFile, writeFile } from 'node:fs/promises';
@@ -31,13 +33,18 @@ import path from 'node:path';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const OUT_FILE = path.join(ROOT, 'data', 'products.json');
-const SLOTS_PER_OCCASION = 15;
+const SLOTS_PER_OCCASION = 10;
 
 /** Правила раскладки офферов по поводам: ключевые слова + ограничение цены. */
 const RULES = {
   'new-year': { any: ['батаре', 'салют', 'римск', 'бенгал', 'хлопуш', 'фонтан'], minPrice: 150 },
   wedding: { any: ['фонтан', 'пневмо', 'римск', 'холодн', 'батаре'], maxPrice: 40000 },
   birthday: { any: ['мал', 'фонтан', 'пневмо', 'бенгал', 'хлопуш', 'батаре'], maxPrice: 15000 },
+  corporate: { any: ['супер', 'крупн', 'средн', 'батаре', 'фонтан'], minPrice: 8000 },
+  party: { any: ['средн', 'мал', 'фонтан', 'хлопуш', 'бенгал'], maxPrice: 20000 },
+  feb23: { any: ['крупн', 'средн', 'римск', 'батаре'], minPrice: 5000 },
+  mar8: { any: ['фонтан', 'мал', 'бенгал', 'пневмо'], maxPrice: 15000 },
+  may9: { any: ['крупн', 'супер', 'римск', 'фонтан'], minPrice: 8000 },
   anniversary: { any: ['крупн', 'супер', 'батаре', 'римск', 'фонтан'], minPrice: 8000 }
 };
 
@@ -124,7 +131,9 @@ function parseOffers(xml) {
       shots: num(p['Количество залпов'] || p['Количество зарядов']) || guessShots(name, description),
       caliber: str(p['Калибр']) || guessCaliber(name, description),
       height: num(p['Высота подъема'] || p['Высота, м']) || guessHeight(description),
-      duration: seconds(p['Время работы'] || p['Продолжительность']) || guessDuration(description)
+      duration: seconds(p['Время работы'] || p['Продолжительность']) || guessDuration(description),
+      image: str(tag(block, 'picture')),
+      video: str(p['Видео'] || p['Video'] || p['Ссылка на видео'] || p['Видеообзор'])
     });
   }
 
@@ -167,12 +176,17 @@ function toSlot(offer) {
     caliber: offer.caliber,
     height: offer.height,
     duration: offer.duration,
-    path: pathFromUrl(offer.url)
+    path: pathFromUrl(offer.url),
+    image: offer.image,
+    video: offer.video
   };
 }
 
 function emptySlot() {
-  return { id: '', name: '', price: 0, shots: 0, caliber: '', height: 0, duration: 0, path: '' };
+  return {
+    id: '', name: '', price: 0, shots: 0, caliber: '', height: 0, duration: 0, path: '',
+    image: '', video: ''
+  };
 }
 
 function buildMeta(source, totalOffers) {
@@ -181,7 +195,7 @@ function buildMeta(source, totalOffers) {
     generated: new Date().toISOString(),
     source,
     offersParsed: totalOffers,
-    note: 'Слоты заполняются сверху вниз в каждом поводе. Пустые слоты — заготовки, дозаполните фид или впишите товары вручную.'
+    note: 'Слоты заполняются сверху вниз в каждом поводе. Пустые слоты — заготовки, дозаполните фид или впишите товары вручную. Поля image/video берутся из <picture> и параметра "Видео" в офферах, если есть.'
   };
 }
 

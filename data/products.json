@@ -1,618 +1,118 @@
 {
   "meta": {
-    "slotsPerOccasion": 15,
-    "generated": "2026-09-10T20:35:58.926Z",
+    "slotsPerOccasion": 10,
+    "generated": "2026-09-11T08:50:00.000Z",
     "source": "manual",
     "filled": 4,
-    "total": 60,
-    "note": "Слоты заполняются сверху вниз в каждом поводе. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs."
+    "total": 90,
+    "note": "10 слотов на повод, заполняются сверху вниз. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
   },
+  "birthday": [
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+  ],
   "new-year": [
-    {
-      "id": "46055",
-      "name": "Архитектор",
-      "price": 24990,
-      "shots": 100,
-      "caliber": "1.2\"",
-      "height": 60,
-      "duration": 90,
-      "path": "/batarei_super_saljutov/arhitektor"
-    },
-    {
-      "id": "45003",
-      "name": "Bellezza",
-      "price": 18990,
-      "shots": 75,
-      "caliber": "1\"",
-      "height": 50,
-      "duration": 70,
-      "path": "/batarei_saljutov_krupnye/bellezza"
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    }
+    { "id": "46055", "name": "Архитектор", "price": 24990, "shots": 100, "caliber": "1.2\"", "height": 60, "duration": 90, "path": "/batarei_super_saljutov/arhitektor", "image": "", "video": "" },
+    { "id": "45003", "name": "Bellezza", "price": 18990, "shots": 75, "caliber": "1\"", "height": 50, "duration": 70, "path": "/batarei_saljutov_krupnye/bellezza", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
   ],
   "wedding": [
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    }
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
   ],
-  "birthday": [
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    }
+  "corporate": [
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+  ],
+  "party": [
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+  ],
+  "feb23": [
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+  ],
+  "mar8": [
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+  ],
+  "may9": [
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
   ],
   "anniversary": [
-    {
-      "id": "44569",
-      "name": "Великие",
-      "price": 32990,
-      "shots": 120,
-      "caliber": "1.5\"",
-      "height": 70,
-      "duration": 100,
-      "path": "/batarei_super_saljutov/velikie"
-    },
-    {
-      "id": "43020",
-      "name": "Весна",
-      "price": 9990,
-      "shots": 49,
-      "caliber": "0.8\"",
-      "height": 35,
-      "duration": 45,
-      "path": "/batarei_saljutov_srednie/vesna"
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    },
-    {
-      "id": "",
-      "name": "",
-      "price": 0,
-      "shots": 0,
-      "caliber": "",
-      "height": 0,
-      "duration": 0,
-      "path": ""
-    }
+    { "id": "44569", "name": "Великие", "price": 32990, "shots": 120, "caliber": "1.5\"", "height": 70, "duration": 100, "path": "/batarei_super_saljutov/velikie", "image": "", "video": "" },
+    { "id": "43020", "name": "Весна", "price": 9990, "shots": 49, "caliber": "0.8\"", "height": 35, "duration": 45, "path": "/batarei_saljutov_srednie/vesna", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
   ]
 }

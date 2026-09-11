@@ -170,6 +170,15 @@ a { color: inherit; }
   border: 1px solid var(--line); border-radius: 4px 4px 14px 14px;
   padding: 1.25rem 1.25rem 1.35rem; background: #ffffff08;
 }
+
+.card__media {
+  aspect-ratio: 4 / 3; margin: -1.25rem -1.25rem 1rem; border-radius: 4px 4px 0 0;
+  overflow: hidden; background: linear-gradient(160deg, #2a1030, #170a1e);
+  display: flex; align-items: center; justify-content: center;
+}
+.card__img, .card__video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card__media--placeholder svg { width: 62%; height: 62%; opacity: .9; }
+
 .card__top { display: flex; align-items: baseline; justify-content: space-between; gap: .8rem; margin-bottom: .2rem; }
 .card__name { font-family: "Unbounded", sans-serif; font-weight: 600; font-size: 1.02rem; letter-spacing: -.02em; }
 .card__price { font-family: "Unbounded", sans-serif; font-weight: 600; font-size: 1.28rem; letter-spacing: -.03em; margin: .55rem 0 1.1rem; }

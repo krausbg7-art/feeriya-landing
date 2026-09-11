@@ -117,6 +117,7 @@ function card(p, maxDur) {
   const w = Math.max(8, Math.round(((p.duration || 0) / maxDur) * 100));
   const ticks = Math.min(p.shots || 1, 120);
   return `<li class="card">
+      ${media(p)}
       <div class="card__top"><span class="card__name">${p.name}</span></div>
       <div class="card__price">${p.price ? fmt(p.price) + ' ₽' : 'цена не указана'}</div>
 
@@ -143,6 +144,41 @@ function blank(slot) {
       <p class="card__hint">Место под товар. Заполните <code>data/products.json</code> → <code>${current}[${slot - 1}]</code></p>
       <span class="card__ghost"></span>
     </li>`;
+}
+
+/* ---------- фото/видео карточки ---------- */
+function media(p) {
+  if (p.video) {
+    const poster = p.image ? ` poster="${p.image}"` : '';
+    return `<div class="card__media card__media--video">
+        <video class="card__video" src="${p.video}"${poster} controls preload="none" playsinline muted loop></video>
+      </div>`;
+  }
+  if (p.image) {
+    return `<div class="card__media"><img class="card__img" src="${p.image}" alt="${p.name}" loading="lazy"></div>`;
+  }
+  return `<div class="card__media card__media--placeholder" aria-hidden="true">${placeholderSvg(p)}</div>`;
+}
+
+const PALETTES = [['#f2b441', '#80166e'], ['#b23fa0', '#f2b441'], ['#e6cf7a', '#4d0d42'], ['#80166e', '#e6cf7a']];
+
+function placeholderSvg(p) {
+  const seed = `${p.id || ''}${p.name || ''}`.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
+  const [c1, c2] = PALETTES[seed % PALETTES.length];
+  const rays = Array.from({ length: 10 }, (_, i) => {
+    const a = (i / 10) * 2 * Math.PI;
+    const x2 = (60 + Math.cos(a) * 34).toFixed(1);
+    const y2 = (40 + Math.sin(a) * 34).toFixed(1);
+    return `<line x1="60" y1="40" x2="${x2}" y2="${y2}" stroke="${c1}" stroke-width="1.4" opacity=".55"/>`;
+  }).join('');
+  return `<svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+      <defs><radialGradient id="g${seed}" cx="50%" cy="40%" r="70%">
+        <stop offset="0%" stop-color="${c1}"/><stop offset="100%" stop-color="${c2}" stop-opacity=".12"/>
+      </radialGradient></defs>
+      ${rays}
+      <circle cx="60" cy="40" r="30" fill="url(#g${seed})"/>
+      <circle cx="60" cy="40" r="4" fill="${c2}"/>
+    </svg>`;
 }
 
 function filledOf(occId) {
