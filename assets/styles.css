@@ -78,10 +78,12 @@ a { color: inherit; }
 .hero__inner { max-width: var(--wrap); margin: 0 auto; padding: 3rem 1.5rem 3.5rem; position: relative; z-index: 2; }
 .hero__kicker { color: var(--dim); font-size: .86rem; margin: 0 0 1.4rem; }
 .hero__title {
-  font-size: var(--step-4); font-weight: 800; letter-spacing: -.045em;
-  max-width: 14ch; margin: 0 0 1.4rem;
+  font-size: clamp(1.9rem, 4.4vw, 3.1rem); font-weight: 800; letter-spacing: -.03em;
+  max-width: 26ch; margin: 0 0 1.4rem;
 }
-.hero__lead { max-width: 46ch; color: #ded0e4; margin: 0 0 2.6rem; font-size: var(--step-1); }
+.hero__title span { color: var(--brand-lift); }
+.hero__lead { max-width: 46ch; color: #ded0e4; margin: 0 0 .9rem; font-size: var(--step-1); }
+.hero__lead:last-of-type { margin-bottom: 2.6rem; }
 
 /* выбор повода — главный элемент страницы */
 .picker { display: grid; gap: .5rem; }
