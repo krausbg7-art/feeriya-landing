@@ -71,7 +71,9 @@ function renderPicker() {
     const n = filledOf(o.id).length;
     return `<button class="picker__item" type="button" role="tab"
               aria-selected="${o.id === current}" data-occasion="${o.id}">
+              ${o.icon ? `<span class="picker__icon" aria-hidden="true">${o.icon}</span>` : ''}
               <span class="picker__name">${o.name}</span>
+              ${o.short ? `<span class="picker__short">${o.short}</span>` : ''}
               <span class="picker__meta">${n} ${plural(n, 'товар', 'товара', 'товаров')} из ${slots}</span>
             </button>`;
   }).join('');
@@ -192,7 +194,10 @@ function plural(n, one, few, many) {
   return many;
 }
 
-const CASES = { 'Новый год': 'Новый год', 'Свадьба': 'свадьбу', 'День рождения': 'день рождения', 'Юбилей': 'юбилей' };
+const CASES = {
+  'Новый год': 'Новый год', 'Свадьба': 'свадьбу', 'День рождения': 'день рождения', 'Юбилей': 'юбилей',
+  'Корпоратив': 'корпоратив', 'Вечеринка': 'вечеринку'
+};
 const caseName = (n) => CASES[n] || n.toLowerCase();
 
 /* ---------- события ---------- */
