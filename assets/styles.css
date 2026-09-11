@@ -78,7 +78,7 @@ a { color: inherit; }
 .hero__inner { max-width: var(--wrap); margin: 0 auto; padding: 3rem 1.5rem 3.5rem; position: relative; z-index: 2; }
 .hero__kicker { color: var(--dim); font-size: .86rem; margin: 0 0 1.4rem; }
 .hero__title {
-  font-size: 18px; font-weight: 800; letter-spacing: -.03em;
+  font-size: 20px; font-weight: 800; letter-spacing: -.03em;
   max-width: 26ch; margin: 0 0 1.4rem;
 }
 .hero__title span { color: var(--brand-lift); }
