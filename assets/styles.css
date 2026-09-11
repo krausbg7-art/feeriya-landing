@@ -102,8 +102,11 @@ a { color: inherit; }
   background: linear-gradient(175deg, var(--brand) 0%, #4d0d42 100%);
   border-color: var(--brand-lift);
 }
+.picker__icon { font-size: 1.5rem; line-height: 1; margin-bottom: .15rem; }
 .picker__name { font-family: "Unbounded", sans-serif; font-weight: 600; font-size: var(--step-1); letter-spacing: -.02em; }
-.picker__meta { font-size: .8rem; color: var(--dim); }
+.picker__short { font-size: .85rem; color: var(--dim); line-height: 1.35; }
+.picker__item[aria-selected="true"] .picker__short { color: #f0cfe9; }
+.picker__meta { font-size: .8rem; color: var(--dim); margin-top: auto; padding-top: .35rem; }
 .picker__item[aria-selected="true"] .picker__meta { color: #f0cfe9; }
 
 /* фон: три вспышки, одна анимация на загрузку */
