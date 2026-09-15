@@ -46,8 +46,7 @@ function goal(name, payload) {
 
 /* ---------- состояние ---------- */
 let catalog = null;
-let products = {};   // { 'new-year': [15 слотов], ... }
-let slots = 15;
+let products = {};   // { 'new-year': [N слотов], ... } — N может отличаться по поводам
 let current = params.get('occasion') || 'new-year';
 let budget = 'all';
 
@@ -59,9 +58,9 @@ async function load() {
   ]);
   catalog = c;
   products = p;
-  slots = (p.meta && p.meta.slotsPerOccasion) || 15;
   const filled = countFilled();
-  if (filled < slots * catalog.occasions.length) showProgress(filled);
+  const total = totalSlots();
+  if (filled < total) showProgress(filled, total);
   if (!catalog.occasions.some((o) => o.id === current)) current = catalog.occasions[0].id;
 }
 
@@ -69,12 +68,13 @@ async function load() {
 function renderPicker() {
   $('picker').innerHTML = catalog.occasions.map((o) => {
     const n = filledOf(o.id).length;
+    const total = (products[o.id] || []).length;
     return `<button class="picker__item" type="button" role="tab"
               aria-selected="${o.id === current}" data-occasion="${o.id}">
               ${o.icon ? `<span class="picker__icon" aria-hidden="true">${o.icon}</span>` : ''}
               <span class="picker__name">${o.name}</span>
               ${o.short ? `<span class="picker__short">${o.short}</span>` : ''}
-              <span class="picker__meta">${n} ${plural(n, 'товар', 'товара', 'товаров')} из ${slots}</span>
+              <span class="picker__meta">${n} ${plural(n, 'товар', 'товара', 'товаров')} из ${total}</span>
             </button>`;
   }).join('');
 }
@@ -189,8 +189,11 @@ function countFilled() {
   return catalog.occasions.reduce((a, o) => a + filledOf(o.id).length, 0);
 }
 
-function showProgress(filled) {
-  const total = slots * catalog.occasions.length;
+function totalSlots() {
+  return catalog.occasions.reduce((a, o) => a + (products[o.id] || []).length, 0);
+}
+
+function showProgress(filled, total) {
   const el = $('demoFlag');
   el.hidden = false;
   el.innerHTML = `Заполнено ${filled} из ${total} карточек. ` +

@@ -1,11 +1,11 @@
 {
   "meta": {
     "slotsPerOccasion": 10,
-    "generated": "2026-09-11T08:50:00.000Z",
+    "generated": "2026-09-15T00:00:00.000Z",
     "source": "manual",
-    "filled": 4,
-    "total": 90,
-    "note": "10 слотов на повод, заполняются сверху вниз. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
+    "filled": 13,
+    "total": 91,
+    "note": "10 слотов на повод по умолчанию (задаётся SLOTS_PER_OCCASION в scripts/build-catalog.mjs), заполняются сверху вниз. У «Новый год» слотов 11 — число слотов не обязано совпадать между поводами, интерфейс считает его по факту длины массива. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
   },
   "birthday": [
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
@@ -20,16 +20,17 @@
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
   ],
   "new-year": [
-    { "id": "46055", "name": "Архитектор", "price": 24990, "shots": 100, "caliber": "1.2\"", "height": 60, "duration": 90, "path": "/batarei_super_saljutov/arhitektor", "image": "", "video": "" },
+    { "id": "47008", "name": "Выбор победителя", "price": 0, "shots": 61, "caliber": "1.25\"", "height": 30, "duration": 65, "path": "/batarei_saljutov_krupnye/47008", "image": "", "video": "https://cdn-video.feeriya.ru/video_hd/47008.mp4" },
     { "id": "45003", "name": "Bellezza", "price": 75950, "shots": 364, "caliber": "1\"/0.8\"", "height": 25, "duration": 171, "path": "/batarei_super_saljutov/45003", "image": "https://media.feeriya.ru/photo/45003.png", "video": "https://cdn-video.feeriya.ru/video_hd/45003.mp4" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+    { "id": "48073", "name": "Новогодний Угар", "price": 0, "shots": 100, "caliber": "0.8\"", "height": 20, "duration": 66, "path": "/batarei_saljutov_krupnye/48073", "image": "", "video": "https://cdn-video.feeriya.ru/video_hd/48073.mp4" },
+    { "id": "44285", "name": "Залпы Радости", "price": 0, "shots": 72, "caliber": "1\"", "height": 25, "duration": 53, "path": "/batarei_saljutov_krupnye/44285", "image": "", "video": "https://cdn-video.feeriya.ru/video_hd/44285.mp4" },
+    { "id": "41523", "name": "Пять минут", "price": 0, "shots": 49, "caliber": "1.2\"", "height": 30, "duration": 46, "path": "/batarei_saljutov_krupnye/41523", "image": "", "video": "https://cdn-video.feeriya.ru/video_hd/41523.mp4" },
+    { "id": "42702", "name": "Синий иней", "price": 0, "shots": 49, "caliber": "1.2\"", "height": 30, "duration": 84, "path": "/batarei_saljutov_krupnye/42702", "image": "", "video": "https://cdn-video.feeriya.ru/video_hd/42702.mp4" },
+    { "id": "48091", "name": "Похмелятор судного дня", "price": 0, "shots": 36, "caliber": "1.2\"", "height": 30, "duration": 39, "path": "/batarei_saljutov_krupnye/48091", "image": "", "video": "https://cdn-video.feeriya.ru/video_hd/48091.mp4" },
+    { "id": "48072", "name": "Новогоднее чтиво", "price": 0, "shots": 100, "caliber": "0.8\"", "height": 20, "duration": 75, "path": "/batarei_saljutov_krupnye/48072", "image": "", "video": "https://cdn-video.feeriya.ru/video_hd/48072.mp4" },
+    { "id": "47847", "name": "Морозные узоры", "price": 0, "shots": 36, "caliber": "1.1\"", "height": 0, "duration": 0, "path": "/batarei_saljutov_krupnye/47847", "image": "", "video": "https://cdn-video.feeriya.ru/video_hd/47847.mp4" },
+    { "id": "43874", "name": "Гордый", "price": 0, "shots": 24, "caliber": "1.2\"", "height": 35, "duration": 30, "path": "/batarei_saljutov_srednie/43874", "image": "", "video": "https://cdn-video.feeriya.ru/video_hd/43874.mp4" },
+    { "id": "44301", "name": "Ёлочка Красавица", "price": 0, "shots": 25, "caliber": "1.2\"", "height": 0, "duration": 0, "path": "/batarei_saljutov_srednie/44301", "image": "", "video": "https://cdn-video.feeriya.ru/video_hd/44301.mp4" }
   ],
   "wedding": [
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
