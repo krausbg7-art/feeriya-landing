@@ -3,21 +3,21 @@
     "slotsPerOccasion": 10,
     "generated": "2026-09-15T00:00:00.000Z",
     "source": "manual",
-    "filled": 13,
+    "filled": 23,
     "total": 91,
     "note": "10 слотов на повод по умолчанию (задаётся SLOTS_PER_OCCASION в scripts/build-catalog.mjs), заполняются сверху вниз. У «Новый год» слотов 11 — число слотов не обязано совпадать между поводами, интерфейс считает его по факту длины массива. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
   },
   "birthday": [
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+    { "id": "43033", "name": "Краски в небо", "price": 1727, "shots": 25, "caliber": "0.8\"", "height": 25, "duration": 27, "path": "/batarei_saljutov_malye/43033", "image": "https://media.feeriya.ru/photo/43033.png", "video": "https://cdn-video.feeriya.ru/video_hd/43033.mp4" },
+    { "id": "41359", "name": "Моя прелесть", "price": 2021, "shots": 25, "caliber": "0.8\"", "height": 25, "duration": 25, "path": "/batarei_saljutov_malye/41359", "image": "https://media.feeriya.ru/photo/41359.png", "video": "https://cdn-video.feeriya.ru/video_hd/41359.mp4" },
+    { "id": "43664", "name": "Флёр", "price": 3533, "shots": 19, "caliber": "1.25\"", "height": 35, "duration": 36, "path": "/batarei_saljutov_srednie/43664", "image": "https://media.feeriya.ru/photo/43664.png", "video": "https://cdn-video.feeriya.ru/video_hd/43664.mp4" },
+    { "id": "43044", "name": "Воздушный холст", "price": 3626, "shots": 24, "caliber": "1.2\"", "height": 35, "duration": 23, "path": "/batarei_saljutov_srednie/43044", "image": "https://media.feeriya.ru/photo/43044.png", "video": "https://cdn-video.feeriya.ru/video_hd/43044.mp4" },
+    { "id": "42584", "name": "Мне 25", "price": 3957, "shots": 25, "caliber": "1\"", "height": 25, "duration": 44, "path": "/batarei_saljutov_srednie/42584", "image": "https://media.feeriya.ru/photo/42584.png", "video": "https://cdn-video.feeriya.ru/video_hd/42584.mp4" },
+    { "id": "44579", "name": "Криптонит", "price": 4996, "shots": 24, "caliber": "1.2\"", "height": 35, "duration": 39, "path": "/batarei_saljutov_srednie/44579", "image": "https://media.feeriya.ru/photo/44579.png", "video": "https://cdn-video.feeriya.ru/video_hd/44579.mp4" },
+    { "id": "46994", "name": "Звёздное путешествие", "price": 2791, "shots": 19, "caliber": "1.1\"", "height": 30, "duration": 30, "path": "/batarei_saljutov_srednie/46994", "image": "https://media.feeriya.ru/photo/46994.png", "video": "https://cdn-video.feeriya.ru/video_hd/46994.mp4" },
+    { "id": "43875", "name": "Лав", "price": 3944, "shots": 24, "caliber": "1.2\"", "height": 35, "duration": 31, "path": "/batarei_saljutov_srednie/43875", "image": "https://media.feeriya.ru/photo/43875.png", "video": "https://cdn-video.feeriya.ru/video_hd/43875.mp4" },
+    { "id": "48069", "name": "Георгины", "price": 4037, "shots": 36, "caliber": "0.8\"", "height": 20, "duration": 32, "path": "/batarei_saljutov_srednie/48069", "image": "https://media.feeriya.ru/photo/48069.png", "video": "https://cdn-video.feeriya.ru/video_hd/48069.mp4" },
+    { "id": "47321", "name": "Время желаний", "price": 5086, "shots": 49, "caliber": "0.8\"", "height": 0, "duration": 36, "path": "/batarei_saljutov_srednie/47321", "image": "https://media.feeriya.ru/photo/47321.png", "video": "https://cdn-video.feeriya.ru/video_hd/47321.mp4" }
   ],
   "new-year": [
     { "id": "47008", "name": "Выбор победителя", "price": 15071, "shots": 61, "caliber": "1.25\"", "height": 30, "duration": 65, "path": "/batarei_saljutov_krupnye/47008", "image": "https://media.feeriya.ru/photo/47008.png", "video": "https://cdn-video.feeriya.ru/video_hd/47008.mp4" },
