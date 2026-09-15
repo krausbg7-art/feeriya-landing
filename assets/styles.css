@@ -184,7 +184,7 @@ a { color: inherit; }
 /* видео-превью: картинка на чёрном фоне, видео проявляется по наведению (после задержки) */
 .card__media--video { background: #000; }
 .card__media--video .card__img {
-  position: absolute; inset: 0; object-fit: contain; background: #000;
+  position: absolute; inset: 0; object-fit: cover; background: #000;
   z-index: 2; transition: opacity .25s ease;
 }
 .card__media--video .card__img--placeholder { display: flex; align-items: center; justify-content: center; }
