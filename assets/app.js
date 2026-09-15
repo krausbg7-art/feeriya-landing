@@ -111,6 +111,7 @@ function renderCards() {
   const maxDur = Math.max(...durations, 1);
 
   $('cards').innerHTML = list.map((p) => p.name ? card(p, maxDur) : blank(p.slot)).join('');
+  wireMedia();
 }
 
 function card(p, maxDur) {
@@ -146,18 +147,43 @@ function blank(slot) {
     </li>`;
 }
 
-/* ---------- фото/видео карточки ---------- */
+/* ---------- фото/видео карточки ----------
+   Сначала картинка на чёрном фоне (VIDEO_DELAY_MS), затем при наведении
+   на карточку включается видео; при уходе курсора — снова картинка. */
+const VIDEO_DELAY_MS = 3000;
+
 function media(p) {
   if (p.video) {
-    const poster = p.image ? ` poster="${p.image}"` : '';
+    const imgLayer = p.image
+      ? `<img class="card__img" src="${p.image}" alt="${p.name}" loading="lazy">`
+      : `<span class="card__img card__img--placeholder" aria-hidden="true">${placeholderSvg(p)}</span>`;
     return `<div class="card__media card__media--video">
-        <video class="card__video" src="${p.video}"${poster} controls preload="none" playsinline muted loop></video>
+        ${imgLayer}
+        <video class="card__video" src="${p.video}" muted loop playsinline preload="none"></video>
       </div>`;
   }
   if (p.image) {
     return `<div class="card__media"><img class="card__img" src="${p.image}" alt="${p.name}" loading="lazy"></div>`;
   }
   return `<div class="card__media card__media--placeholder" aria-hidden="true">${placeholderSvg(p)}</div>`;
+}
+
+function wireMedia() {
+  document.querySelectorAll('.card__media--video').forEach((el) => {
+    const video = el.querySelector('video');
+    if (!video) return;
+    setTimeout(() => el.classList.add('is-ready'), VIDEO_DELAY_MS);
+    el.addEventListener('mouseenter', () => {
+      if (!el.classList.contains('is-ready')) return;
+      el.classList.add('is-playing');
+      video.currentTime = 0;
+      video.play().catch(() => {});
+    });
+    el.addEventListener('mouseleave', () => {
+      el.classList.remove('is-playing');
+      video.pause();
+    });
+  });
 }
 
 const PALETTES = [['#f2b441', '#80166e'], ['#b23fa0', '#f2b441'], ['#e6cf7a', '#4d0d42'], ['#80166e', '#e6cf7a']];
