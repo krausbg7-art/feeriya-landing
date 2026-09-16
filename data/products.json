@@ -3,7 +3,7 @@
     "slotsPerOccasion": 10,
     "generated": "2026-09-15T00:00:00.000Z",
     "source": "manual",
-    "filled": 31,
+    "filled": 37,
     "total": 89,
     "note": "10 слотов на повод по умолчанию (задаётся SLOTS_PER_OCCASION в scripts/build-catalog.mjs), заполняются сверху вниз. Число слотов не обязано совпадать между поводами (у «Новый год» — 13, у «Свадьба» — 6 без пустых заготовок) — интерфейс считает его по факту длины массива. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
   },
@@ -43,12 +43,12 @@
     { "id": "47019", "name": "Сияющее золото №1 Сияющее золото №2 (комплект из 2 батарей)", "price": 68794, "shots": 260, "caliber": "1.25\"", "height": 30, "duration": 241, "path": "/batarei_super_saljutov/47019", "image": "https://media.feeriya.ru/photo/47019.png", "video": "https://cdn-video.feeriya.ru/video_hd/47019.mp4" }
   ],
   "corporate": [
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
+    { "id": "43023", "name": "ОлдСкул", "price": 17997, "shots": 70, "caliber": "1.25\"", "height": 35, "duration": 89, "path": "/batarei_saljutov_krupnye/43023", "image": "https://media.feeriya.ru/photo/43023.png", "video": "https://cdn-video.feeriya.ru/video_hd/43023.mp4" },
+    { "id": "41266", "name": "Корпоратив", "price": 12857, "shots": 64, "caliber": "1.25\"", "height": 30, "duration": 96, "path": "/batarei_saljutov_krupnye/41266", "image": "https://media.feeriya.ru/photo/41266.png", "video": "https://cdn-video.feeriya.ru/video_hd/41266.mp4" },
+    { "id": "44310", "name": "Огни Бродвея", "price": 10333, "shots": 45, "caliber": "1.2\"", "height": 35, "duration": 70, "path": "/batarei_saljutov_krupnye/44310", "image": "https://media.feeriya.ru/photo/44310.png", "video": "https://cdn-video.feeriya.ru/video_hd/44310.mp4" },
+    { "id": "42235", "name": "Лезгинка", "price": 7805, "shots": 49, "caliber": "1\"", "height": 30, "duration": 64, "path": "/batarei_saljutov_krupnye/42235", "image": "https://media.feeriya.ru/photo/42235.png", "video": "https://cdn-video.feeriya.ru/video_hd/42235.mp4" },
+    { "id": "43941", "name": "Кюрасао", "price": 4367, "shots": 49, "caliber": "0.8\"", "height": 20, "duration": 51, "path": "/batarei_saljutov_srednie/43941", "image": "https://media.feeriya.ru/photo/43941.png", "video": "https://cdn-video.feeriya.ru/video_hd/43941.mp4" },
+    { "id": "47663", "name": "Киберпанк", "price": 7590, "shots": 57, "caliber": "0.8\"/1\"/1.25\"", "height": 0, "duration": 0, "path": "/batarei_saljutov_srednie/47663", "image": "https://media.feeriya.ru/photo/47663.png", "video": "https://cdn-video.feeriya.ru/video_hd/47663.mp4" },
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
