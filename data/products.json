@@ -3,7 +3,7 @@
     "slotsPerOccasion": 10,
     "generated": "2026-09-15T00:00:00.000Z",
     "source": "manual",
-    "filled": 37,
+    "filled": 47,
     "total": 89,
     "note": "10 слотов на повод по умолчанию (задаётся SLOTS_PER_OCCASION в scripts/build-catalog.mjs), заполняются сверху вниз. Число слотов не обязано совпадать между поводами (у «Новый год» — 13, у «Свадьба» — 6 без пустых заготовок) — интерфейс считает его по факту длины массива. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
   },
@@ -67,16 +67,16 @@
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
   ],
   "feb23": [
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+    { "id": "48028", "name": "Офицеры", "price": 5324, "shots": 49, "caliber": "1\"", "height": 25, "duration": 0, "path": "/batarei_saljutov_krupnye/48028", "image": "https://media.feeriya.ru/photo/48028.png", "video": "https://cdn-video.feeriya.ru/video_hd/48028.mp4" },
+    { "id": "40535", "name": "Шок и трепет", "price": 16788, "shots": 67, "caliber": "2\"/1.25\"/1.5\"", "height": 40, "duration": 59, "path": "/batarei_super_saljutov/40535", "image": "https://media.feeriya.ru/photo/40535.png", "video": "https://cdn-video.feeriya.ru/video_hd/40535.mp4" },
+    { "id": "34543", "name": "Третий Рим", "price": 23052, "shots": 100, "caliber": "1.25\"", "height": 30, "duration": 60, "path": "/batarei_super_saljutov/34543", "image": "https://media.feeriya.ru/photo/34543.png", "video": "https://cdn-video.feeriya.ru/video_hd/34543.mp4" },
+    { "id": "48074", "name": "Воздушный бой", "price": 16200, "shots": 160, "caliber": "0.8\"", "height": 20, "duration": 75, "path": "/batarei_super_saljutov/48074", "image": "https://media.feeriya.ru/photo/48074.png", "video": "https://cdn-video.feeriya.ru/video_hd/48074.mp4" },
+    { "id": "42703", "name": "Сотка", "price": 21159, "shots": 100, "caliber": "1.2\"", "height": 30, "duration": 86, "path": "/batarei_super_saljutov/42703", "image": "https://media.feeriya.ru/photo/42703.png", "video": "https://cdn-video.feeriya.ru/video_hd/42703.mp4" },
+    { "id": "47341", "name": "Легендарный Т-34", "price": 26719, "shots": 100, "caliber": "1.2\"", "height": 0, "duration": 88, "path": "/batarei_super_saljutov/47341", "image": "https://media.feeriya.ru/photo/47341.png", "video": "https://cdn-video.feeriya.ru/video_hd/47341.mp4" },
+    { "id": "43939", "name": "Имперский фейерверк", "price": 18704, "shots": 100, "caliber": "1.25\"", "height": 30, "duration": 50, "path": "/batarei_super_saljutov/43939", "image": "https://media.feeriya.ru/photo/43939.png", "video": "https://cdn-video.feeriya.ru/video_hd/43939.mp4" },
+    { "id": "48093", "name": "Град", "price": 11255, "shots": 49, "caliber": "1.2\"", "height": 30, "duration": 45, "path": "/batarei_saljutov_krupnye/48093", "image": "https://media.feeriya.ru/photo/48093.png", "video": "https://cdn-video.feeriya.ru/video_hd/48093.mp4" },
+    { "id": "47331", "name": "Царь-пушка", "price": 9099, "shots": 49, "caliber": "1\"", "height": 0, "duration": 24, "path": "/batarei_saljutov_krupnye/47331", "image": "https://media.feeriya.ru/photo/47331.png", "video": "https://cdn-video.feeriya.ru/video_hd/47331.mp4" },
+    { "id": "47318", "name": "Скорый поезд", "price": 4142, "shots": 36, "caliber": "0.8\"", "height": 0, "duration": 42, "path": "/batarei_saljutov_srednie/47318", "image": "https://media.feeriya.ru/photo/47318.png", "video": "https://cdn-video.feeriya.ru/video_hd/47318.mp4" }
   ],
   "mar8": [
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
