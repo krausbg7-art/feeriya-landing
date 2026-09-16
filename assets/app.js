@@ -153,9 +153,10 @@ function blank(slot) {
 const VIDEO_DELAY_MS = 3000;
 
 function media(p) {
+  const fit = p.fit === 'contain' ? ' style="object-fit:contain"' : '';
   if (p.video) {
     const imgLayer = p.image
-      ? `<img class="card__img" src="${p.image}" alt="${p.name}" loading="lazy">`
+      ? `<img class="card__img" src="${p.image}" alt="${p.name}" loading="lazy"${fit}>`
       : `<span class="card__img card__img--placeholder" aria-hidden="true">${placeholderSvg(p)}</span>`;
     return `<div class="card__media card__media--video">
         ${imgLayer}
@@ -163,7 +164,7 @@ function media(p) {
       </div>`;
   }
   if (p.image) {
-    return `<div class="card__media"><img class="card__img" src="${p.image}" alt="${p.name}" loading="lazy"></div>`;
+    return `<div class="card__media"><img class="card__img" src="${p.image}" alt="${p.name}" loading="lazy"${fit}></div>`;
   }
   return `<div class="card__media card__media--placeholder" aria-hidden="true">${placeholderSvg(p)}</div>`;
 }
