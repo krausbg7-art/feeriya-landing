@@ -3,9 +3,9 @@
     "slotsPerOccasion": 10,
     "generated": "2026-09-15T00:00:00.000Z",
     "source": "manual",
-    "filled": 23,
-    "total": 91,
-    "note": "10 слотов на повод по умолчанию (задаётся SLOTS_PER_OCCASION в scripts/build-catalog.mjs), заполняются сверху вниз. У «Новый год» слотов 11 — число слотов не обязано совпадать между поводами, интерфейс считает его по факту длины массива. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
+    "filled": 29,
+    "total": 87,
+    "note": "10 слотов на повод по умолчанию (задаётся SLOTS_PER_OCCASION в scripts/build-catalog.mjs), заполняются сверху вниз. Число слотов не обязано совпадать между поводами (у «Новый год» — 11, у «Свадьба» — 6 без пустых заготовок) — интерфейс считает его по факту длины массива. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
   },
   "birthday": [
     { "id": "43033", "name": "Краски в небо", "price": 1727, "shots": 25, "caliber": "0.8\"", "height": 25, "duration": 27, "path": "/batarei_saljutov_malye/43033", "image": "https://media.feeriya.ru/photo/43033.png", "video": "https://cdn-video.feeriya.ru/video_hd/43033.mp4" },
@@ -33,16 +33,12 @@
     { "id": "44301", "name": "Ёлочка Красавица", "price": 5973, "shots": 25, "caliber": "1.2\"", "height": 0, "duration": 0, "path": "/batarei_saljutov_srednie/44301", "image": "https://media.feeriya.ru/photo/44301.png", "video": "https://cdn-video.feeriya.ru/video_hd/44301.mp4" }
   ],
   "wedding": [
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+    { "id": "45010", "name": "Люминосо - Luminoso", "price": 120266, "shots": 422, "caliber": "1.25\"/1\"", "height": 35, "duration": 194, "path": "/batarei_super_saljutov/45010", "image": "https://media.feeriya.ru/photo/45010.png", "video": "https://cdn-video.feeriya.ru/video_hd/45010.mp4" },
+    { "id": "43020", "name": "Весна - Авторская серия", "price": 99711, "shots": 347, "caliber": "1.2\"/1\"", "height": 30, "duration": 252, "path": "/batarei_super_saljutov/43020", "image": "https://media.feeriya.ru/photo/43020.png", "video": "https://cdn-video.feeriya.ru/video_hd/43020.mp4" },
+    { "id": "44569", "name": "Великие - Авторская серия", "price": 95870, "shots": 347, "caliber": "1.25\"/1\"", "height": 30, "duration": 254, "path": "/batarei_super_saljutov/44569", "image": "https://media.feeriya.ru/photo/44569.png", "video": "https://cdn-video.feeriya.ru/video_hd/44569.mp4" },
+    { "id": "45007", "name": "Стелато - Stellato", "price": 30216, "shots": 120, "caliber": "1.25\"", "height": 30, "duration": 71, "path": "/batarei_super_saljutov/45007", "image": "https://media.feeriya.ru/photo/45007.png", "video": "https://cdn-video.feeriya.ru/video_hd/45007.mp4" },
+    { "id": "45003", "name": "Белеза - Bellezza", "price": 61820, "shots": 364, "caliber": "1\"/0.8\"", "height": 25, "duration": 171, "path": "/batarei_super_saljutov/45003", "image": "https://media.feeriya.ru/photo/45003.png", "video": "https://cdn-video.feeriya.ru/video_hd/45003.mp4" },
+    { "id": "47019", "name": "Сияющее золото №1 Сияющее золото №2 (комплект из 2 батарей)", "price": 68794, "shots": 260, "caliber": "1.25\"", "height": 30, "duration": 241, "path": "/batarei_super_saljutov/47019", "image": "https://media.feeriya.ru/photo/47019.png", "video": "https://cdn-video.feeriya.ru/video_hd/47019.mp4" }
   ],
   "corporate": [
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
