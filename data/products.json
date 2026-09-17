@@ -3,8 +3,8 @@
     "slotsPerOccasion": 10,
     "generated": "2026-09-15T00:00:00.000Z",
     "source": "manual",
-    "filled": 54,
-    "total": 82,
+    "filled": 65,
+    "total": 83,
     "note": "10 слотов на повод по умолчанию (задаётся SLOTS_PER_OCCASION в scripts/build-catalog.mjs), заполняются сверху вниз. Число слотов не обязано совпадать между поводами (у «Новый год» — 13, у «Свадьба» — 6 без пустых заготовок) — интерфейс считает его по факту длины массива. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
   },
   "birthday": [
@@ -72,16 +72,17 @@
     { "id": "47318", "name": "Скорый поезд", "price": 4142, "shots": 36, "caliber": "0.8\"", "height": 0, "duration": 42, "path": "/batarei_saljutov_srednie/47318", "image": "https://media.feeriya.ru/photo/47318.png", "video": "https://cdn-video.feeriya.ru/video_hd/47318.mp4" }
   ],
   "mar8": [
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+    { "id": "41496", "name": "Взрывной гранат", "price": 2095, "shots": 16, "caliber": "1\"", "height": 25, "duration": 32, "path": "/batarei_saljutov_malye/41496", "image": "https://media.feeriya.ru/photo/41496.png", "video": "https://cdn-video.feeriya.ru/video_hd/41496.mp4" },
+    { "id": "47703", "name": "Конфетки-бараночки", "price": 2298, "shots": 36, "caliber": "0.6\"", "height": 20, "duration": 0, "path": "/batarei_saljutov_malye/47703", "image": "https://media.feeriya.ru/photo/47703.png", "video": "https://cdn-video.feeriya.ru/video_hd/47703.mp4" },
+    { "id": "43886", "name": "Хозяин горы", "price": 2900, "shots": 19, "caliber": "1.2\"", "height": 35, "duration": 18, "path": "/batarei_saljutov_srednie/43886", "image": "https://media.feeriya.ru/photo/43886.png", "video": "https://cdn-video.feeriya.ru/video_hd/43886.mp4" },
+    { "id": "44584", "name": "Зомби пати", "price": 2900, "shots": 19, "caliber": "1.2\"", "height": 35, "duration": 24, "path": "/batarei_saljutov_srednie/44584", "image": "https://media.feeriya.ru/photo/44584.png", "video": "https://cdn-video.feeriya.ru/video_hd/44584.mp4" },
+    { "id": "43042", "name": "Изыскание", "price": 2900, "shots": 19, "caliber": "1.2\"", "height": 35, "duration": 28, "path": "/batarei_saljutov_srednie/43042", "image": "https://media.feeriya.ru/photo/43042.png", "video": "https://cdn-video.feeriya.ru/video_hd/43042.mp4" },
+    { "id": "44590", "name": "Рыжуля", "price": 3388, "shots": 36, "caliber": "0.8\"", "height": 25, "duration": 29, "path": "/batarei_saljutov_srednie/44590", "image": "https://media.feeriya.ru/photo/44590.png", "video": "https://cdn-video.feeriya.ru/video_hd/44590.mp4" },
+    { "id": "43884", "name": "Дзен", "price": 3674, "shots": 19, "caliber": "1.2\"", "height": 35, "duration": 25, "path": "/batarei_saljutov_srednie/43884", "image": "https://media.feeriya.ru/photo/43884.png", "video": "https://cdn-video.feeriya.ru/video_hd/43884.mp4" },
+    { "id": "47328", "name": "Изумруд", "price": 4625, "shots": 36, "caliber": "1\"", "height": 0, "duration": 34, "path": "/batarei_saljutov_srednie/47328", "image": "https://media.feeriya.ru/photo/47328.png", "video": "https://cdn-video.feeriya.ru/video_hd/47328.mp4" },
+    { "id": "47329", "name": "Сапфир", "price": 6547, "shots": 36, "caliber": "1\"", "height": 0, "duration": 26, "path": "/batarei_saljutov_srednie/47329", "image": "https://media.feeriya.ru/photo/47329.png", "video": "https://cdn-video.feeriya.ru/video_hd/47329.mp4" },
+    { "id": "42700", "name": "НезабудьКа!", "price": 2626, "shots": 19, "caliber": "1\"", "height": 25, "duration": 36, "path": "/batarei_saljutov_srednie/42700", "image": "https://media.feeriya.ru/photo/42700.png", "video": "https://cdn-video.feeriya.ru/video_hd/42700.mp4" },
+    { "id": "43914", "name": "Богатство шейха", "price": 2966, "shots": 19, "caliber": "1\"", "height": 25, "duration": 38, "path": "/batarei_saljutov_srednie/43914", "image": "https://media.feeriya.ru/photo/43914.png", "video": "https://cdn-video.feeriya.ru/video_hd/43914.mp4" }
   ],
   "may9": [
     { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
