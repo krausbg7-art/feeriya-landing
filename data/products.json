@@ -3,8 +3,8 @@
     "slotsPerOccasion": 10,
     "generated": "2026-09-15T00:00:00.000Z",
     "source": "manual",
-    "filled": 65,
-    "total": 83,
+    "filled": 71,
+    "total": 89,
     "note": "10 слотов на повод по умолчанию (задаётся SLOTS_PER_OCCASION в scripts/build-catalog.mjs), заполняются сверху вниз. Число слотов не обязано совпадать между поводами (у «Новый год» — 13, у «Свадьба» — 6 без пустых заготовок) — интерфейс считает его по факту длины массива. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
   },
   "birthday": [
@@ -32,7 +32,13 @@
     { "id": "43874", "name": "Гордый", "price": 4996, "shots": 24, "caliber": "1.2\"", "height": 35, "duration": 30, "path": "/batarei_saljutov_srednie/43874", "image": "https://media.feeriya.ru/photo/43874.png", "video": "https://cdn-video.feeriya.ru/video_hd/43874.mp4" },
     { "id": "44301", "name": "Ёлочка Красавица", "price": 5973, "shots": 25, "caliber": "1.2\"", "height": 0, "duration": 0, "path": "/batarei_saljutov_srednie/44301", "image": "https://media.feeriya.ru/photo/44301.png", "video": "https://cdn-video.feeriya.ru/video_hd/44301.mp4" },
     { "id": "48133", "name": "Батарея салютов ПТ 100 01", "price": 21288, "shots": 100, "caliber": "1.2\"", "height": 0, "duration": 71, "path": "/batarei_super_saljutov/48133", "image": "https://media.feeriya.ru/photo/48133.png", "video": "https://cdn-video.feeriya.ru/video_hd/48133.mp4" },
-    { "id": "48134", "name": "Батарея салютов ПТ 100 02", "price": 21288, "shots": 100, "caliber": "1.2\"", "height": 0, "duration": 74, "path": "/batarei_super_saljutov/48134", "image": "https://media.feeriya.ru/photo/48134.png", "video": "https://cdn-video.feeriya.ru/video_hd/48134.mp4" }
+    { "id": "48134", "name": "Батарея салютов ПТ 100 02", "price": 21288, "shots": 100, "caliber": "1.2\"", "height": 0, "duration": 74, "path": "/batarei_super_saljutov/48134", "image": "https://media.feeriya.ru/photo/48134.png", "video": "https://cdn-video.feeriya.ru/video_hd/48134.mp4" },
+    { "id": "46995", "name": "Снегурочка", "price": 3321, "shots": 19, "caliber": "1.1\"", "height": 30, "duration": 40, "path": "/batarei_saljutov_srednie/46995", "image": "https://media.feeriya.ru/photo/46995.png", "video": "https://cdn-video.feeriya.ru/video_hd/46995.mp4" },
+    { "id": "48170", "name": "Зимняя мастерская", "price": 6852, "shots": 36, "caliber": "1\"", "height": 25, "duration": 34, "path": "/batarei_saljutov_srednie/48170", "image": "https://media.feeriya.ru/photo/48170.png", "video": "https://cdn-video.feeriya.ru/video_hd/48170.mp4" },
+    { "id": "48080", "name": "Идеальный гость", "price": 4036, "shots": 25, "caliber": "1\"", "height": 25, "duration": 34, "path": "/batarei_saljutov_srednie/48080", "image": "https://media.feeriya.ru/photo/48080.png", "video": "https://cdn-video.feeriya.ru/video_hd/48080.mp4" },
+    { "id": "48082", "name": "Снежная королева", "price": 6319, "shots": 36, "caliber": "1\"", "height": 25, "duration": 44, "path": "/batarei_saljutov_srednie/48082", "image": "https://media.feeriya.ru/photo/48082.png", "video": "https://cdn-video.feeriya.ru/video_hd/48082.mp4" },
+    { "id": "48165", "name": "Новогодние каникулы", "price": 4037, "shots": 36, "caliber": "0.8\"", "height": 20, "duration": 39, "path": "/batarei_saljutov_srednie/48165", "image": "https://media.feeriya.ru/photo/48165.png", "video": "https://cdn-video.feeriya.ru/video_hd/48165.mp4" },
+    { "id": "48166", "name": "Зимушка зима", "price": 5103, "shots": 49, "caliber": "0.8\"", "height": 25, "duration": 42, "path": "/batarei_saljutov_srednie/48166", "image": "https://media.feeriya.ru/photo/48166.png", "video": "https://cdn-video.feeriya.ru/video_hd/48166.mp4" }
   ],
   "wedding": [
     { "id": "45010", "name": "Люминосо - Luminoso", "price": 120266, "shots": 422, "caliber": "1.25\"/1\"", "height": 35, "duration": 194, "path": "/batarei_super_saljutov/45010", "image": "https://media.feeriya.ru/photo/45010.png", "video": "https://cdn-video.feeriya.ru/video_hd/45010.mp4" },
