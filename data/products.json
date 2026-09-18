@@ -3,8 +3,8 @@
     "slotsPerOccasion": 10,
     "generated": "2026-09-15T00:00:00.000Z",
     "source": "manual",
-    "filled": 80,
-    "total": 88,
+    "filled": 86,
+    "total": 86,
     "note": "10 слотов на повод по умолчанию (задаётся SLOTS_PER_OCCASION в scripts/build-catalog.mjs), заполняются сверху вниз. Число слотов не обязано совпадать между поводами (у «Новый год» — 13, у «Свадьба» — 6 без пустых заготовок) — интерфейс считает его по факту длины массива. Пустые слоты — заготовки для наполнения вручную или через scripts/build-catalog.mjs. Поля image/video — ссылки на фото и видео товара; пустая строка = карточка покажет заглушку."
   },
   "birthday": [
@@ -102,15 +102,13 @@
     { "id": "48096", "name": "Морская эскадра (веер)", "price": 29385, "shots": 150, "caliber": "0.8\"/1.2\"", "height": 30, "duration": 77, "path": "/batarei_super_saljutov/48096", "image": "https://media.feeriya.ru/photo/48096.png", "video": "https://cdn-video.feeriya.ru/video_hd/48096.mp4" }
   ],
   "anniversary": [
-    { "id": "44569", "name": "Великие", "price": 32990, "shots": 120, "caliber": "1.5\"", "height": 70, "duration": 100, "path": "/batarei_super_saljutov/velikie", "image": "", "video": "" },
-    { "id": "43020", "name": "Весна", "price": 9990, "shots": 49, "caliber": "0.8\"", "height": 35, "duration": 45, "path": "/batarei_saljutov_srednie/vesna", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" },
-    { "id": "", "name": "", "price": 0, "shots": 0, "caliber": "", "height": 0, "duration": 0, "path": "", "image": "", "video": "" }
+    { "id": "45003", "name": "Белеза - Bellezza", "price": 61820, "shots": 364, "caliber": "1\"/0.8\"", "height": 25, "duration": 171, "path": "/batarei_super_saljutov/45003", "image": "https://media.feeriya.ru/photo/45003.png", "video": "https://cdn-video.feeriya.ru/video_hd/45003.mp4" },
+    { "id": "45007", "name": "Стелато - Stellato", "price": 30216, "shots": 120, "caliber": "1.25\"", "height": 30, "duration": 71, "path": "/batarei_super_saljutov/45007", "image": "https://media.feeriya.ru/photo/45007.png", "video": "https://cdn-video.feeriya.ru/video_hd/45007.mp4" },
+    { "id": "48094", "name": "Тропикана", "price": 25317, "shots": 100, "caliber": "1.2\"", "height": 30, "duration": 86, "path": "/batarei_super_saljutov/48094", "image": "https://media.feeriya.ru/photo/48094.png", "video": "https://cdn-video.feeriya.ru/video_hd/48094.mp4" },
+    { "id": "48084", "name": "Пятница Перезагрузка", "price": 17435, "shots": 100, "caliber": "1\"", "height": 25, "duration": 62, "path": "/batarei_super_saljutov/48084", "image": "https://media.feeriya.ru/photo/48084.png", "video": "https://cdn-video.feeriya.ru/video_hd/48084.mp4" },
+    { "id": "47333", "name": "Лавина", "price": 17435, "shots": 100, "caliber": "1\"", "height": 0, "duration": 69, "path": "/batarei_super_saljutov/47333", "image": "https://media.feeriya.ru/photo/47333.png", "video": "https://cdn-video.feeriya.ru/video_hd/47333.mp4" },
+    { "id": "43939", "name": "Имперский фейерверк", "price": 18704, "shots": 100, "caliber": "1.25\"", "height": 30, "duration": 50, "path": "/batarei_super_saljutov/43939", "image": "https://media.feeriya.ru/photo/43939.png", "video": "https://cdn-video.feeriya.ru/video_hd/43939.mp4" },
+    { "id": "48134", "name": "Батарея салютов ПТ 100 02", "price": 21288, "shots": 100, "caliber": "1.2\"", "height": 0, "duration": 0, "path": "/batarei_super_saljutov/48134", "image": "https://media.feeriya.ru/photo/48134.png", "video": "https://cdn-video.feeriya.ru/video_hd/48134.mp4" },
+    { "id": "48133", "name": "Батарея салютов ПТ 100 01", "price": 21288, "shots": 100, "caliber": "1.2\"", "height": 0, "duration": 0, "path": "/batarei_super_saljutov/48133", "image": "https://media.feeriya.ru/photo/48133.png", "video": "https://cdn-video.feeriya.ru/video_hd/48133.mp4" }
   ]
 }
